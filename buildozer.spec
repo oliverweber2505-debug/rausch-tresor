@@ -14,4 +14,3 @@ android.minapi = 21
 android.sdk = 33
 android.build_tools_version = 33.0.0
 android.accept_sdk_license = True
-p4a.branch = stable
