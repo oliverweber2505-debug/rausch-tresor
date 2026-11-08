@@ -50,7 +50,8 @@ jobs:
         export JAVA_HOME=$JAVA_HOME_11_X64
         export PATH=$JAVA_HOME/bin:$PATH
         export PATH=$PATH:~/.local/bin
-        buildozer -v android debug
+        buildozer clean
+        buildozer --debug android debug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
