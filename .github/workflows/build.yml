@@ -50,7 +50,7 @@ jobs:
           export JAVA_HOME=$JAVA_HOME_11_X64
           export PATH=$JAVA_HOME/bin:$PATH
           export PATH=$PATH:~/.local/bin
-          echo "Aktives JAVA_HOME: $JAVA_HOME"
+          echo "Verwende Java-Version:"
           java -version
           buildozer -v android debug
 
