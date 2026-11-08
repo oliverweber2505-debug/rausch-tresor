@@ -48,10 +48,7 @@ jobs:
       - name: Build with Buildozer
         run: |
           export JAVA_HOME=$JAVA_HOME_11_X64
-          export PATH=$JAVA_HOME/bin:$PATH
-          export PATH=$PATH:~/.local/bin
-          echo "Verwende Java-Version:"
-          java -version
+          export PATH=$JAVA_HOME/bin:$PATH:~/.local/bin
           buildozer -v android debug
 
       - name: Upload APK
