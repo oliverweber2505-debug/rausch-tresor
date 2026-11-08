@@ -43,7 +43,6 @@ jobs:
     - name: Build with Buildozer
       run: |
         export PATH=$PATH:~/.local/bin
-        cd ~/tresor_app
         buildozer -v android debug
 
     - name: Upload APK
